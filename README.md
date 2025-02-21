@@ -1,13 +1,9 @@
 # Boxing gloves dryer
 
-## 
- - [Easy version](##Easy-version)
- - [Speed modulation version](##Speed-modulation-version)
-
 ## Documentation
 For now it is just a 3D print that you will hook up to a 12V fan. The 3D model is now in version 2 and works just fine.
 
-For 3D printing just look into the "STLs to print" folder and there you see folders titled as versions(V1, V2...), In each folder are STLs for printing and before them is a number of how many times you have to print the file out in this format:  **How many times**_boxing_glove_dryer_**Part number**.
+For 3D printing just look into the "STLs to print" folder and there you see folders titled as versions(V1, V2...), In each folder are STLs for printing and before them is a number of how many times you have to print the file out in this format:  `{How many times}_boxing_glove_dryer_part{number}`.
 The parts don't need to be printed in some chronological order it is purely for me so I don't get lost in the parts.
 
 I'm using a 4-wire fan from an old computer but use any you want just change the 3D models or add an extension to this design to fit your fan.
@@ -45,20 +41,20 @@ Just print out the STLs, glue them together and glue the fan to the bottom of th
 ## Speed modulation version
 ### Things used
  - Arduino nano microcontroller
+   - **Libraries**
+    - Adafruit GFX Library
+    - Adafruit SSD1306
+    - Wire(Built-in)
  - Rotary encoder with push button
  - 12V power source
  - 12V fan
  - 3D printer
    - filament
  - Glue
- - **Libraries**
-    - Adafruit GFX Library
-    - Adafruit SSD1306
-    - Wire(Built-in)
 
 ### Assembly
-Let's start with wiring everything:
 #### Wiring
+Let's start with **wiring** everything:
 
 Rotary encoder wiring:
 |Rotary Encoder Pin|	Arduino Pin   |
@@ -79,6 +75,7 @@ Fan wiring:
 
 OLED display wiring:
 |OLED Pin	| Arduino Nano  |
+|---------|---------------|
 |VCC      |	5V            |
 |GND      |	GND           |
 |SCL      |	A5 (I2C Clock)|
