@@ -42,9 +42,9 @@ Just print out the STLs, glue them together and glue the fan to the bottom of th
 ### Things used
  - Arduino nano microcontroller
    - **Libraries**
-    - Adafruit GFX Library
-    - Adafruit SSD1306
-    - Wire(Built-in)
+      - Adafruit GFX Library
+      - Adafruit SSD1306
+      - Wire(Built-in)
  - Rotary encoder with push button
  - 12V power source
  - 12V fan
